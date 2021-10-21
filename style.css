@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container {
+    margin:200px auto;
+    height:200px;
+    width: 250px;
+    padding: 40px;
+    text-align: center;
+}
+#container #counting_numbers, #counting_numbers.counting-numbers {
+    font-size: 35px;
+    color:rgb(27, 119, 240);
+  
+   height: 50px;
+   width:100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#container #ready_replay {
+    font-size: 20px;
+ 
+    font-weight: 700;
+}
+.repalyButton {
+    height:50px;
+    width:150px ;
+    font-size: 17px;
+    color:white;
+    background-color: rgb(12, 8, 223);
+    border: none;
+    border-radius: 10px;;
+}
+.repalyButton:hover{
+    cursor: pointer;
+    background-color: rgb(22, 182, 142);
+}
+
+#container .stylingGo#counting_numbers {
+    color:black;
+    font-size: 25px;;
+}
+#container .animatedNumbers {
+    animation: AnimationNumber 1s linear 1s  infinite normal forwards;
+}
+
+
+@keyframes AnimationNumber {
+    0%{
+        
+        transform: rotate(-100deg);
+    }
+    50%{
+        
+        transform: rotate(-200deg);
+    }
+    100%{
+       
+        transform: rotate(-360deg);
+       transition: ease-in-out;
+    }
+}
